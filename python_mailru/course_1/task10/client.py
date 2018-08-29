@@ -73,9 +73,6 @@ class Client:
                 data[key] = []
             data[key].append((int(timestamp), float(value)))
 
-        for k in data:
-            sorted(data[k], key=lambda tup: tup[0])
-
         return data
 
     def close(self):
